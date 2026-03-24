@@ -1,0 +1,112 @@
+body{
+    cursor: url('cat_paw.png'), auto;
+    margin: 0;
+}
+:hover{
+cursor: url('/images/cat_paw.png'), auto;
+}
+
+
+header{
+    background-color: rgb(91, 61, 22);
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+  
+}
+    
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    font-size: 30px;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+nav a:hover{
+    color: rgb(244, 209, 121);
+}
+
+nav li {
+    transition: transform 0.2s;
+}
+
+nav li:hover {
+    transform: scale(1.1); /* Aumenta o item em 10% */
+}
+
+.logo{
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 600;
+}
+.logo img{
+     width: 130px;
+    height: 130px;
+    border-radius: 100px; 
+}
+
+.teste{
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: rgb(254, 142, 142);
+        padding: 10px;
+        gap: 10px;
+        align-items: center;
+
+}
+
+
+
+
+.animais {
+   
+    background-color: rgb(255, 208, 208);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    padding: 30px;
+     align-items: center
+}
+
+.texto h1 {
+  font-family: Arial, sans-serif;
+  font-size: 32px;
+  line-height: 1.2;
+  color: #1f3a5f; /* azul escuro */
+}
+
+.texto .destaque {
+  color: #ff5a3c; /* laranja */
+  font-weight: bold;
+}
+
+.pet{
+    display: flex;
+    background-color: rgba(249, 107, 154, 0.286);
+    width: 170px;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.pet img{
+    background: pink;
+    width: 170px;
+    height: 170px;
+    
+}
+
+.footer{
+    background-color: rgb(91, 61, 22);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    
+}
