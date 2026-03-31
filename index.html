@@ -15,176 +15,173 @@
         </div>
          
          <nav>
-            <ul id>
+            <ul >
                 <li><a href="sobre">Sobre</a></li>
                 <li><a href="contacto">Contacto</a></li>
                 <li><a href="adoção">Adoção</a></li>
                 <li><a href="/page/ajudar.html">Ajudar</a></li>
             </ul>
          </nav>
-          <audio controls loop >
+        <audio controls loop >
             <source src="cats.mp3" type="audio/mpeg">
-
-          </audio>
-         
+        </audio>     
     </header>
-    <div class="teste">
-    <div class="animais">
 
-    <div class="pet">
-        <img src="images/Gato_1.jpg" alt="Gato">
-        <h2>Nugget</h2>
-        <p>Pequenininho e dourado, derrete o coração de qualquer um.</p>
-        <button>Adote</button>
+    <section class="hero">
+        <h2> Adota um amigo para a vida! </h2>
+        <p>Encontra o teu companheiro perfeito. Cada animal merece um lar cheio de amor.</p>
+
+    </section>
+
+    <div class="filtros">
+        <button onclick="filtrar('todos')" class="btn-filtro ativo">Todos</button>
+        <button onclick="filtrar('cães')" class="btn-filtro">Cães</button>
+        <button onclick="filtrar('gatos')" class="btn-filtro">Gatos</button>
     </div>
 
-    <div class="pet">
-        <img src="images/cachorro _1.jpg" alt="cachorro">
-        <h2>nome</h2>
-        <p>descricao</p>
-        <button>Adote</button>
-    </div>
+    <div class="conteudo-principal">
+        <aside class="formulario">
+            <h3>🔍 Filtrar</h3>
+            <form action="servidor.com" method="POST">
+                <label for="nome">Nome do animal</label>
+                <input type="text" id="nome" name="nome" placeholder="Ex: Bolinha" minlength="2" maxlength="50">
 
-    <div class="pet">
-        <img src="images/Gato_2.jpg" alt="Gato">
-        <h2>nome</h2>
-        <p>descricao</p>
-        <button>Adote</button>
-    </div>
+                <label for="Zona">Zona</label>
+                <select name="Zona" id="Zona">
+                    <option value="">Qualquer</option>
+                    <option value="Aveiro">Aveiro</option>
+                    <option value="Braga">Braga</option>
+                    <option value="Coimbra">Coimbra</option>
+                    <option value="Porto">Porto</option>
+                    <option value="Lisboa">Lisboa</option>
+                </select>
 
-    <div class="pet">
-        <img src="images/cachorro _2.jpg" alt="cachorro">
-        <h2>nome</h2>
-        <p>descricao</p>
-        <button>Adote</button>
-    </div>
+                <label for="Tamanho">Tamanho</label>
+                <select name="Tamanho" id="Tamanho">
+                    <option value="">Qualquer</option>
+                    <option value="pequeno">Pequeno</option>
+                    <option value="medio">Médio</option>
+                    <option value="grande">Grande</option>
+                    <option value="muito-grande">Muito Grande</option>
+                </select>
+                <label for="Sexo">Sexo</label>
+                <select name="Sexo" id="Sexo">
+                    <option value="Qualquer">Qualquer</option>
+                    <option value="Fêmea">Fêmea</option>
+                    <option value="Macho">Macho</option>
+                </select>
+                <label for="Cor">Cor</label>
+                <select name="Cor" id="Cor">
+                    <option value="Qualquer">Qualquer</option>
+                    <option value="Laranja">Laranja</option>
+                    <option value="Branco">Branco</option>
+                    <option value="Preto">Preto</option>
+                    <option value="Cinzento">Cinzento</option>
+                    <option value="Castanho">Castanho</option>
+                    <option value="Outra cor">Outra cor</option>
+                </select>
 
-    <div class="pet">
-        <img src="images/Gato_3.jpg" alt="Gato">
-        <h2>Bolinha </h2>
-        <p>Gordinho e preguiçoso, ama dormir no sol e brincar com bolinhas de papel.</p>
-        <button>Adote</button>
-    </div>
+                <button type="submit" class="btn-pesquisar">Pesquisar</button>
+            </form>
+        </aside>
 
-    <div class="pet">
-        <img src="images/cachorro _3.jpg" alt="cachorro">
-        <h2>nome</h2>
-        <p>descricao</p>
-        <button>Adote</button>
-    </div>
+        <div class="animais">
 
-    <div class="pet">
-        <img src="images/Gato_4.jpg" alt="gato">
-        <h2>nome</h2>
-        <p>descricao</p>
-        <button>Adote</button>
-    </div>
+            <div class="pet"data-especie="gato">
+                <img src="images/Gato_1.jpg" alt="Gato">
+                <h2>Nugget</h2>
+                <p>Pequenininho e dourado como o sol, Nugget passa os dias a ronronar no colo de quem o amar. Adora ser o centro das atenções e nunca recusa uma festinha atrás das orelhas</p>
+                <button>Adote</button>
+            </div>
 
-    <div class="pet">
-        <img src="images/cachorro _4.jpg" alt="cachorro">
-        <h2>nome</h2>
-        <p>descricao</p>
-        <button>Adote</button>
-    </div>
-    <div class="pet">
-        <img src="images/cachorro _5.jpg" alt="cachorro">
-        <h2>nome</h2>
-        <p>descricao</p>
-        <button>Adote</button>
-    </div>
+            <div class="pet" data-especie="cao">
+                <img src="images/cachorro _1.jpg" alt="cachorro">
+                <h2>Zeus</h2>
+                <p>Encontraram-no na rua com uma rosa na boca e desde esse dia nunca mais largou o estilo. Zeus é o cão mais romântico do canil — charmoso, elegante e com um olhar que derrete qualquer um. Procura um lar à altura da sua personalidade.</p>
+                <button>Adote</button>
+            </div>
 
-    <div class="pet">
-        <img src="images/Gato_6.jpg" alt="gato">
-        <h2>Senhor Bigodes </h2>
-        <p>Elegante e exigente, só aceita a melhor ração e o melhor colo.</p>
-        <button>Adote</button>
-    </div>
-    <div class="pet">
-        <img src="images/cachorro_7.jpg" alt="cachorro">
-        <h2>nome</h2>
-        <p>descricao</p>
-        <button>Adote</button>
-    </div>
+            <div class="pet" data-especie="gato">
+                <img src="images/Gato_2.jpg" alt="Gato">
+                <h2>Faísca</h2>
+                <p>Nunca para quieta nem um segundo. Salta, corre, caça sombras e inventa brincadeiras do nada. Perfeita para quem quer um gato com energia de cachorro.</p>
+                <button>Adote</button>
+            </div>
 
+            <div class="pet" data-especie="cao">
+                <img src="images/cachorro _2.jpg" alt="cachorro">
+                <h2>Bobi </h2>
+                <p>Acorda sempre com o rabo a abanar e vai para a cama da mesma forma. Bobi transforma qualquer dia mau num dia bom — basta aparecer com a bola na boca e o olhar mais fofo do mundo.</p>
+                <button>Adote</button>
+            </div>
 
+            <div class="pet" data-especie="gato">
+                <img src="images/Gato_3.jpg" alt="Gato">
+                <h2>Bolinha </h2>
+                <p>Gordinho e preguiçoso, ama dormir no sol e brincar com bolinhas de papel.</p>
+                <button>Adote</button>
+            </div>
 
+            <div class="pet" data-especie="cao">
+                <img src="images/cachorro _3.jpg" alt="cachorro">
+                <h2>Batman & Robin </h2>
+                <p> Não salvam Gotham, mas salvam o teu dia com uma garantia. Chegaram juntos, vão embora juntos — estes dois não se separam. Se tens espaço para dois heróis na tua vida, eles estão prontos. </p>
+                <button>Adote</button>
+            </div>
 
-   </div>
-  
-   <div class="formulario">
-     <form action="servidor.com" method="POST"> 
-        <label for="nome">Nome</label>
-        <input type="text" id="" name="" placeholder="Animal" required minlength="2" maxlength="50">
+            <div class="pet" data-especie="gato">
+                <img src="images/Gato_4.jpg" alt="gato">
+                <h2>Mimi </h2>
+                <p>Explora a casa como se fosse uma expedição científica. Cada gaveta aberta, cada saco no chão — Mimi tem de investigar. Curiosa, inteligente e impossível de ignorar.</p>
+                <button>Adote</button>
+            </div>
 
-        <label for="Zona">Zona</label>
-        <select name="Zona" id="Zona">
-            <option value="Qualquer">Qualquer</option>
-            <option value="Aveiro">Aveiro</option>
-            <option value="Braga">Braga</option>
-            <option value="Coimbra">Coimbra</option>
-            <option value="Porto">Porto</option>
-            <option value="Lisboa">Lisboa</option>
-        </select>
-        <label for="Espécie">Selecione</label>
-        <select name="Espécie" id="Espécie">
-            <option value="Qualquer">Qualquer</option>
-            <option value="Cão">Cão</option>
-            <option value="Gato">Gato</option>
-        </select>
-       <label for="Tamanho">Tamanho</label>
-       <select name="Tamanho" id="Tamanho">
-        <option value="Qualquer">Qualquer</option>
-        <option value="pequeno">Pequeno</option>
-        <option value="médio">Médio</option>
-        <option value="Grande">Grande</option>
-        <option value="Muito Grande">Muito Grande</option>
-       </select>
-       <label for="Sexo">Sexo</label>
-       <select name="Sexo" id="Sexo">
-        <option value="Qualquer">Qualquer</option>
-        <option value="Fêmea">Fêmea</option>
-        <option value="Macho">Macho</option>
-       </select>
-       <label for="Cor">Cor</label>
-       <select name="Cor" id="Cor">
-        <option value="Qualquer">Qualquer</option>
-        <option value="Laranja">Laranja</option>
-        <option value="Branco">Branco</option>
-        <option value="Preto">Preto</option>
-        <option value="Cinzento">Cinzento</option>
-        <option value="Castanho">Castanho</option>
-        <option value="Outra cor">Outra cor</option>
-       </select>
+            <div class="pet" data-especie="cao">
+                <img src="images/cachorro _4.jpg" alt="cachorro">
+                <h2>Mel </h2>
+                <p>Tranquila, dócil e com um instinto natural para perceber quando alguém precisa de um abraço. Mel é perfeita para famílias com crianças ou para quem quer companhia silenciosa e carinhosa.</p>
+                <button>Adote</button>
+            </div>
 
-       
-    </form>
+            <div class="pet"    data-especie="cao">
+                <img src="images/cachorro _5.jpg" alt="cachorro">
+                <h2>Pipa</h2>
+                <p>Pequena em tamanho, enorme em personalidade. Pipa ladra para os cães grandes, rouba o lugar no sofá sem pedir licença e exige atenção com um olhar que é impossível de resistir.</p>
+                <button>Adote</button>
+            </div>
 
-     </div>
-   </div>
+            <div class="pet" data-especie="gato">
+                <img src="images/Gato_6.jpg" alt="gato">
+                <h2>Senhor Bigodes </h2>
+                <p>Elegante e exigente, só aceita a melhor ração e o melhor colo.</p>
+                <button>Adote</button>
+            </div>
 
-   <footer class="footer">
-    <div class="info">
-        <h2>Como chegar?</h2>
-        <p>Endereço: Rua do Pet, 123 - Porto</p>
-        <div class="mapa">
-             <iframe src="https://www.google.com/maps?q=Rua+do+Pet+123+Porto&output=embed" frameborder="pet"></iframe>
+            <div class="pet"   data-especie="cao">
+                <img src="images/cachorro_7.jpg" alt="cachorro">
+                <h2>nome</h2>
+                <p>descricao</p>
+                <button>Adote</button>
+            </div>
+
         </div>
-
     </div>
-    <p> aaa</p>
 
-    <div>
-     <p>© 2024 Meu Pet. Todos os direitos reservados.</p>
-    </div>
-       
+   <footer class="footer" id="contacto">
+        <div class="info">
+            <h2>Como chegar?</h2>
+            <p>Endereço: Rua do Pet, 123 - Porto</p>
+        <div class="mapa">
+             <iframe src="https://www.google.com/maps?q=Rua+do+Pet+123+Porto&output=embed"
+                 allowfullscreen loading="lazy"
+                title="Localização Meu Pet">
+            </iframe>
+        </div>
+        </div>
+        <p class="footer-copy">© 2024 Meu Pet. Todos os direitos reservados. 🐾</p>
    </footer>
-   </div>
 
-   
-       
-   
+   <script src="script.js"></script>
 
-
-    
 </body>
 </html>

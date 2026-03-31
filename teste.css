@@ -1,0 +1,283 @@
+
+        :root {
+            --cor-principal: rgb(91, 61, 22);
+            --cor-fundo: rgb(255, 219, 219);
+            --cor-destaque: rgb(244, 209, 121);
+            --cor-form-fundo: rgb(255, 235, 235);
+        }
+ 
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+ 
+        body {
+            font-family: 'Quicksand', sans-serif;
+            background-color: #fff5f5;
+        }
+ 
+        header {
+            background-color: var(--cor-principal);
+            color: white;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+ 
+        .logo {
+            font-family: 'Fredoka', sans-serif;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+ 
+        .logo h1 { font-size: 2rem; }
+ 
+        .logo img {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            border: 3px solid var(--cor-destaque);
+            object-fit: cover;
+        }
+ 
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+            font-size: 1.1rem;
+        }
+ 
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            padding: 6px 12px;
+            border-radius: 20px;
+            transition: background 0.3s, color 0.3s;
+        }
+ 
+        nav a:hover {
+            color: var(--cor-principal);
+            background-color: var(--cor-destaque);
+        }
+ 
+        nav li { transition: transform 0.2s; }
+        nav li:hover { transform: scale(1.05); }
+        audio { height: 35px; opacity: 0.85; }
+ 
+        .hero {
+            background: linear-gradient(135deg, #fff0f0, #ffe0f0);
+            text-align: center;
+            padding: 3rem 2rem;
+            border-bottom: 3px dashed rgb(249, 107, 154);
+        }
+ 
+        .hero h2 {
+            font-family: 'Fredoka', sans-serif;
+            font-size: 2.5rem;
+            color: var(--cor-principal);
+            margin-bottom: 0.5rem;
+        }
+ 
+        .hero p { font-size: 1.1rem; color: #555; max-width: 500px; margin: 0 auto; }
+ 
+        /* =============================================
+           BOTÕES DE FILTRO
+           ✅ NOVO: barra de filtro por espécie
+        ============================================= */
+        .filtros {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            padding: 20px;
+            background-color: rgb(255, 219, 219);
+        }
+ 
+        .btn-filtro {
+            padding: 10px 24px;
+            border-radius: 20px;
+            font-family: 'Fredoka', sans-serif;
+            font-size: 1.1rem;
+            cursor: pointer;
+            background-color: white;
+            color: rgb(91, 61, 22);
+            border: 2px solid rgba(249, 107, 154, 0.4);
+            transition: transform 0.2s, background-color 0.2s;
+        }
+ 
+        .btn-filtro:hover {
+            transform: scale(1.05);
+            background-color: rgb(255, 200, 220);
+        }
+ 
+        /* Botão que está selecionado fica cor-de-rosa */
+        .btn-filtro.ativo {
+            background-color: rgb(249, 107, 154);
+            color: white;
+            border-color: rgb(249, 107, 154);
+        }
+ 
+        .conteudo-principal {
+            display: flex;
+            flex-direction: row;
+            min-height: 60vh;
+        }
+ 
+        .formulario {
+            width: 260px;
+            min-width: 220px;
+            background-color: var(--cor-form-fundo);
+            padding: 2rem 1.5rem;
+            border-right: 2px solid rgba(249, 107, 154, 0.3);
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+ 
+        .formulario h3 {
+            font-family: 'Fredoka', sans-serif;
+            font-size: 1.4rem;
+            color: var(--cor-principal);
+            margin-bottom: 0.5rem;
+            text-align: center;
+        }
+ 
+        .formulario label {
+            color: rgb(86, 2, 2);
+            font-size: 0.9rem;
+            font-weight: 600;
+            display: block;
+            margin-top: 8px;
+        }
+ 
+        .formulario input,
+        .formulario select {
+            width: 100%;
+            padding: 8px 10px;
+            border-radius: 10px;
+            border: 1.5px solid rgba(249, 107, 154, 0.4);
+            background-color: white;
+            font-family: 'Quicksand', sans-serif;
+            font-size: 0.9rem;
+            margin-top: 4px;
+            outline: none;
+            transition: border-color 0.2s;
+        }
+ 
+        .formulario input:focus,
+        .formulario select:focus { border-color: rgb(249, 107, 154); }
+ 
+        .formulario select { background-color: rgb(255, 119, 214); color: white; }
+        .formulario option { background-color: blanchedalmond; color: #333; }
+ 
+        .btn-pesquisar {
+            margin-top: 16px;
+            padding: 10px;
+            background-color: var(--cor-principal);
+            color: white;
+            border: none;
+            border-radius: 20px;
+            font-family: 'Fredoka', sans-serif;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: background 0.3s, transform 0.2s;
+        }
+ 
+        .btn-pesquisar:hover { background-color: rgb(130, 90, 35); transform: scale(1.03); }
+ 
+        .animais {
+            flex: 1;
+            background-color: var(--cor-fundo);
+            display: flex;
+            flex-wrap: wrap;
+            gap: 24px;
+            justify-content: center;
+            padding: 30px;
+            align-items: flex-start;
+        }
+ 
+        .pet {
+            display: flex;
+            background-color: white;
+            border: 2px solid rgba(249, 107, 154, 0.3);
+            border-radius: 20px;
+            width: 180px;
+            align-items: center;
+            flex-direction: column;
+            padding: 16px 12px;
+            text-align: center;
+            box-shadow: 0 3px 12px rgba(249, 107, 154, 0.15);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+ 
+        .pet:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 8px 24px rgba(249, 107, 154, 0.35);
+        }
+ 
+        .pet img {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid rgba(249, 107, 154, 0.4);
+            margin-bottom: 8px;
+        }
+ 
+        .pet h2 {
+            font-family: 'Fredoka', sans-serif;
+            font-size: 1.1rem;
+            color: var(--cor-principal);
+            margin: 6px 0 4px;
+        }
+ 
+        .pet p { font-size: 0.8rem; color: #666; line-height: 1.4; margin-bottom: 10px; }
+ 
+        .pet button {
+            background-color: rgb(231, 205, 255);
+            color: rgb(60, 20, 80);
+            border: none;
+            border-radius: 20px;
+            padding: 8px 20px;
+            font-family: 'Fredoka', sans-serif;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.2s, background-color 0.2s;
+        }
+ 
+        .pet button:hover { transform: scale(1.08); background-color: rgb(210, 170, 255); }
+ 
+        .footer {
+            background-color: var(--cor-principal);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+ 
+        .footer h2 { font-family: 'Fredoka', sans-serif; font-size: 1.5rem; margin-bottom: 0.5rem; }
+        .footer p { margin: 4px 0; font-size: 0.95rem; opacity: 0.85; }
+ 
+        .mapa {
+            margin: 1rem auto;
+            max-width: 500px;
+            border-radius: 16px;
+            overflow: hidden;
+            border: 3px solid rgba(255,255,255,0.2);
+        }
+ 
+        .mapa iframe { width: 100%; height: 250px; border: none; display: block; }
+        .footer-copy { margin-top: 1rem; font-size: 0.85rem; opacity: 0.6; }
+ 
+        @media (max-width: 700px) {
+            .conteudo-principal { flex-direction: column; }
+            .formulario { width: 100%; border-right: none; border-bottom: 2px solid rgba(249, 107, 154, 0.3); }
+            nav ul { gap: 12px; font-size: 0.9rem; }
+            .logo h1 { font-size: 1.4rem; }
+            header { flex-wrap: wrap; }
+        }
