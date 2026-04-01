@@ -86,7 +86,7 @@ audio {
     border-bottom: 3px dashed rgb(249, 107, 154);
 }
 
-.hero h2{
+.hero h3{
     font-family: 'Fredoka', sans-serif;
     color: var(--cor-principal);
     font-size: 2.5rem;
