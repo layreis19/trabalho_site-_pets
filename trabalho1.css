@@ -24,6 +24,9 @@ header{
     z-index: 100;
 }
 
+:hover{
+cursor: url('/images/cat_paw.png'), auto;
+}
 
 .logo{
     font-family: 'Fredoka', sans-serif;
@@ -67,6 +70,14 @@ nav a:hover{
 nav li { transition: transform 0.2s;}
 
 nav li:hover {transform: scale(1.05);} /* Aumenta o item em 10% */
+
+audio {
+    width: 200px;
+    border-radius: 20px;
+    background-color: rgb(255, 235, 235);
+    border: 2px solid rgb(249, 107, 154, 0.4);
+    padding: 5px;
+}
 
 .hero{
     background: linear-gradient(135deg, #fff0f0, #ffe0f0);

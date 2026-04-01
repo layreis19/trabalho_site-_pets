@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adoção - Meu Pet</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/adocao.css">
+</head>
+<body>
+    <header>
+         <div class="logo">
+            <h1>Meu Pet</h1>
+            <img src="../images/cat.gif" alt="gatinho">
+        </div>
+         
+         <nav>
+            <ul >
+                <li><a href="../index.html">Sobre</a></li>
+                <li><a href="../contacto.html">Contacto</a></li>
+                <li><a href="../adoção.html">Adoção</a></li>
+                <li><a href="../ajudar.html">Ajudar</a></li>
+            </ul>
+         </nav>
+        <audio controls loop >
+            <source src="../music/cats.mp3" type="audio/mpeg">
+        </audio>     
+    </header>
+    <section class="hero-adocao">
+        <h2> Formulário de Adoção </h2>
+        <p>Preencha o formulário abaixo para iniciar o processo de adoção.</p>
+    </section>
+
+    <div class="caixa-adocao">
+        <h3> Os teus dados </h3>
+        <form action="servidor.com" method="post">
+            <P class="titulo-secao">Dados Pessoais</P>
+            <div class="campo">
+                <label for="nome">Nome Completo</label>
+                <input type="text" id="nome" name="nome" placeholder="Ex: João Silva" required minlength="3" maxlength="100">
+            </div>
+
+            <div class="campo">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Ex: joao@silva.com" required>
+            </div>
+            <div class="campo">
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="Ex: 912 345 678" required>
+            </div>
+            <hr class="separador">
+            <p class="titulo-secao">Morada</p>
+
+            <div class="campo">
+                <label for="rua">Rua e Número</label>
+                <input type="text" id="rua" name="rua" placeholder="Ex: Rua da Paz, 123" required>  
+            </div>
+            <div class="campo">
+                <label for="cidade">Cidade</label>
+                <select name="cidade" id="cidade" required>
+                    <option value="">Selecione uma cidade</option>
+                    <option value="Lisboa">Lisboa</option>
+                    <option value="Porto">Porto</option>
+                    <option value="Braga">Braga</option>
+                    <option value="Coimbra">Coimbra</option>
+                    <option value="Aveiro">Aveiro</option>
+                </select>
+            </div>
+            <hr class="separador">
+
+            <p class="titulo-secao"> A tua habitação </p>
+
+            <div class="campo">
+                <label> Tipo de Habitação </label>
+           
+            <div class="grupo-radio">
+                <label >
+                    <input type="radio" name="habitação" value="Casa com Jardim" required>
+                    Casa com jardim
+                </label>
+                <label >
+                    <input type="radio" name="habitação" value="Apartamento" required>
+                    Apartamento
+                </label>
+                <label >
+                    <input type="radio" name="habitação" value="Casa sem Jardim" required>
+                    Casa sem jardim
+                </label>
+            </div>
+        </div>
+
+        <hr class="separador">
+        <p class="titulo-secao">Mensagem</p>
+
+        <div>
+            <label for="mensagem">Porque deseja adotar um animal?(opcional)</label>
+            <textarea id="mensagem" name="mensagem" placeholder="Explique por que você quer adotar um animal..."></textarea>
+        </div>
+        <button type="submit" class="btn-submeter">Enviar pedido de adoção</button>
+
+        <p class="aviso">*Campos obrigatórios</p>
+        </form>
+
+    </div>
+
+    <footer class="footer" id="contacto">
+        <div class="info">
+            <h2>Como chegar?</h2>
+            <p>Endereço: Rua do Pet, 123 - Porto</p>
+        <div class="mapa">
+             <iframe src="https://www.google.com/maps?q=Rua+do+Pet+123+Porto&output=embed"
+                 allowfullscreen loading="lazy"
+                title="Localização Meu Pet">
+            </iframe>
+        </div>
+        </div>
+        <p class="footer-copy">© 2026 Meu Pet. Todos os direitos reservados. 🐾</p>
+    </footer>
+    
+</body>
+</html>

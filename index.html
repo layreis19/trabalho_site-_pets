@@ -16,14 +16,14 @@
          
          <nav>
             <ul >
-                <li><a href="sobre">Sobre</a></li>
-                <li><a href="contacto">Contacto</a></li>
-                <li><a href="adoção">Adoção</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="/page/adocao.html">Adoção</a></li>
                 <li><a href="/page/ajudar.html">Ajudar</a></li>
             </ul>
          </nav>
         <audio controls loop >
-            <source src="cats.mp3" type="audio/mpeg">
+            <source src="/music/cats.mp3" type="audio/mpeg">
         </audio>     
     </header>
 
@@ -35,8 +35,8 @@
 
     <div class="filtros">
         <button onclick="filtrar('todos')" class="btn-filtro ativo">Todos</button>
-        <button onclick="filtrar('cães')" class="btn-filtro">Cães</button>
-        <button onclick="filtrar('gatos')" class="btn-filtro">Gatos</button>
+        <button onclick="filtrar('cao')" class="btn-filtro">Cães</button>
+        <button onclick="filtrar('gato')" class="btn-filtro">Gatos</button>
     </div>
 
     <div class="conteudo-principal">
@@ -66,13 +66,13 @@
                 </select>
                 <label for="Sexo">Sexo</label>
                 <select name="Sexo" id="Sexo">
-                    <option value="Qualquer">Qualquer</option>
+                    <option value="">Qualquer</option>
                     <option value="Fêmea">Fêmea</option>
                     <option value="Macho">Macho</option>
                 </select>
                 <label for="Cor">Cor</label>
                 <select name="Cor" id="Cor">
-                    <option value="Qualquer">Qualquer</option>
+                    <option value="">Qualquer</option>
                     <option value="Laranja">Laranja</option>
                     <option value="Branco">Branco</option>
                     <option value="Preto">Preto</option>
@@ -81,83 +81,83 @@
                     <option value="Outra cor">Outra cor</option>
                 </select>
 
-                <button type="submit" class="btn-pesquisar">Pesquisar</button>
+                <button type="button" class="btn-pesquisar" onclick="pesquisar()">Pesquisar</button>
             </form>
         </aside>
 
         <div class="animais">
 
-            <div class="pet"data-especie="gato">
+            <div class="pet" data-especie="gato" data-sexo="Macho" data-cor="Laranja" data-tamanho="pequeno" data-zona="Porto">
                 <img src="images/Gato_1.jpg" alt="Gato">
                 <h2>Nugget</h2>
                 <p>Pequenininho e dourado como o sol, Nugget passa os dias a ronronar no colo de quem o amar. Adora ser o centro das atenções e nunca recusa uma festinha atrás das orelhas</p>
                 <button>Adote</button>
             </div>
 
-            <div class="pet" data-especie="cao">
+            <div class="pet" data-especie="cao" data-sexo="Macho" data-cor="Preto" data-tamanho="grande" data-zona="Porto">
                 <img src="images/cachorro _1.jpg" alt="cachorro">
                 <h2>Zeus</h2>
                 <p>Encontraram-no na rua com uma rosa na boca e desde esse dia nunca mais largou o estilo. Zeus é o cão mais romântico do canil — charmoso, elegante e com um olhar que derrete qualquer um. Procura um lar à altura da sua personalidade.</p>
                 <button>Adote</button>
             </div>
 
-            <div class="pet" data-especie="gato">
+            <div class="pet" data-especie="gato" data-sexo="Fêmea" data-cor="Laranja" data-tamanho="pequeno" data-zona="Aveiro">
                 <img src="images/Gato_2.jpg" alt="Gato">
                 <h2>Faísca</h2>
                 <p>Nunca para quieta nem um segundo. Salta, corre, caça sombras e inventa brincadeiras do nada. Perfeita para quem quer um gato com energia de cachorro.</p>
                 <button>Adote</button>
             </div>
 
-            <div class="pet" data-especie="cao">
+            <div class="pet" data-especie="cao" data-sexo="Macho" data-cor="Laranja" data-tamanho="medio" data-zona="Aveiro">
                 <img src="images/cachorro _2.jpg" alt="cachorro">
                 <h2>Bobi </h2>
                 <p>Acorda sempre com o rabo a abanar e vai para a cama da mesma forma. Bobi transforma qualquer dia mau num dia bom — basta aparecer com a bola na boca e o olhar mais fofo do mundo.</p>
                 <button>Adote</button>
             </div>
 
-            <div class="pet" data-especie="gato">
+            <div class="pet" data-especie="gato" data-sexo="Macho" data-cor="Cinzento" data-tamanho="pequeno" data-zona="Braga">
                 <img src="images/Gato_3.jpg" alt="Gato">
                 <h2>Bolinha </h2>
                 <p>Gordinho e preguiçoso, ama dormir no sol e brincar com bolinhas de papel.</p>
                 <button>Adote</button>
             </div>
 
-            <div class="pet" data-especie="cao">
+            <div class="pet" data-especie="cao" data-sexo="Macho" data-cor="Preto" data-tamanho="grande" data-zona="Braga">
                 <img src="images/cachorro _3.jpg" alt="cachorro">
                 <h2>Batman & Robin </h2>
                 <p> Não salvam Gotham, mas salvam o teu dia com uma garantia. Chegaram juntos, vão embora juntos — estes dois não se separam. Se tens espaço para dois heróis na tua vida, eles estão prontos. </p>
                 <button>Adote</button>
             </div>
 
-            <div class="pet" data-especie="gato">
+            <div class="pet" data-especie="gato"    data-sexo="Fêmea" data-cor="Cinzento" data-tamanho="pequeno" data-zona="Lisboa">
                 <img src="images/Gato_4.jpg" alt="gato">
                 <h2>Mimi </h2>
                 <p>Explora a casa como se fosse uma expedição científica. Cada gaveta aberta, cada saco no chão — Mimi tem de investigar. Curiosa, inteligente e impossível de ignorar.</p>
                 <button>Adote</button>
             </div>
 
-            <div class="pet" data-especie="cao">
+            <div class="pet" data-especie="cao" data-sexo="Fêmea" data-cor="Laranja" data-tamanho="pequeno" data-zona="Lisboa">
                 <img src="images/cachorro _4.jpg" alt="cachorro">
                 <h2>Mel </h2>
                 <p>Tranquila, dócil e com um instinto natural para perceber quando alguém precisa de um abraço. Mel é perfeita para famílias com crianças ou para quem quer companhia silenciosa e carinhosa.</p>
                 <button>Adote</button>
             </div>
 
-            <div class="pet"    data-especie="cao">
+            <div class="pet" data-especie="cao" data-sexo="Fêmea" data-cor="Castanho" data-tamanho="pequeno" data-zona="Porto">
                 <img src="images/cachorro _5.jpg" alt="cachorro">
                 <h2>Pipa</h2>
                 <p>Pequena em tamanho, enorme em personalidade. Pipa ladra para os cães grandes, rouba o lugar no sofá sem pedir licença e exige atenção com um olhar que é impossível de resistir.</p>
                 <button>Adote</button>
             </div>
 
-            <div class="pet" data-especie="gato">
+            <div class="pet" data-especie="gato" data-sexo="Macho" data-cor="Preto" data-tamanho="grande" data-zona="Coimbra">
                 <img src="images/Gato_6.jpg" alt="gato">
                 <h2>Senhor Bigodes </h2>
                 <p>Elegante e exigente, só aceita a melhor ração e o melhor colo.</p>
                 <button>Adote</button>
             </div>
 
-            <div class="pet"   data-especie="cao">
+            <div class="pet"   data-especie="cao" data-sexo="Macho" data-cor="Castanho" data-tamanho="medio" data-zona="Coimbra">
                 <img src="images/cachorro_7.jpg" alt="cachorro">
                 <h2>nome</h2>
                 <p>descricao</p>
@@ -178,10 +178,10 @@
             </iframe>
         </div>
         </div>
-        <p class="footer-copy">© 2024 Meu Pet. Todos os direitos reservados. 🐾</p>
+        <p class="footer-copy">© 2026 Meu Pet. Todos os direitos reservados. 🐾</p>
    </footer>
 
-   <script src="script.js"></script>
+   <script src="js/script.js"></script>
 
 </body>
 </html>
