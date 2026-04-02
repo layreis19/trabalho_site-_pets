@@ -149,7 +149,8 @@ audio {
  
         .campo textarea {
             height: 100px;
-            resize: vertical;
+            height: 100%;
+            
         }
  
         .grupo-radio {

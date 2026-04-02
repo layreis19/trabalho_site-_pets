@@ -5,9 +5,15 @@
     --cor-form-fundo: rgb(255, 235, 235);
 }
 
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body{
     font-family: 'Quicksand', sans-serif;
-    background-color: #fff5f5;
+    background-color: var(--cor-fundo);
 }
 
 header{
@@ -17,11 +23,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 10px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
-    position: sticky;
-    top: 0;
-    z-index: 100;
+    flex-wrap: wrap;
 }
 
 :hover{
@@ -79,77 +81,52 @@ audio {
     padding: 5px;
 }
 
-.hero{
-    background: linear-gradient(135deg, #fff0f0, #ffe0f0);
+.hero-ajudar{
     text-align: center;
-    padding: 3rem 2rem;
-    border-bottom: 3px dashed rgb(249, 107, 154);
+    padding: 3rem 1rem;
+    background: linear-gradient(135deg,#fff0f0,#fff0f0);   
 }
 
-.hero h3{
-    font-family: 'Fredoka', sans-serif;
+.hero-ajudar h3{
+    font-family: 'Fredoka';
     color: var(--cor-principal);
     font-size: 2.5rem;
-    margin-bottom: 0.5rem;
-}
-.hero p{
-    font-size: 1.1rem;
-    color: #555; max-width: 500px; margin: 0 auto;
 }
 
-
-
-    
-
-.teste{
-    display: flex;
-    flex-direction: row-reverse;
-    background-color: rgb(254, 142, 142);
-        padding: 10px;
-        gap: 10px;
-        align-items: center;
-
+.hero-ajudar p{
+   margin: 10px auto;
+   max-width: 500px;
 }
 
-
-
-
-.animais {
-   
-    background-color: rgb(255, 208, 208);
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    justify-content: center;
+.formas-ajudar{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(180px,1fr));
+    gap: 20px;
     padding: 30px;
-     align-items: center
 }
 
-.texto h1 {
-  font-family: Arial, sans-serif;
-  font-size: 32px;
-  line-height: 1.2;
-  color: #1f3a5f; /* azul escuro */
+.card{
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+}
+.animais {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+    gap: 20px;
+    padding: 30px;
 }
 
-.texto .destaque {
-  color: #ff5a3c; /* laranja */
-  font-weight: bold;
-}
 
 .pet{
-    display: flex;
-    background-color: rgba(249, 107, 154, 0.286);
-    width: 170px;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
+    border-radius: 15px;
 }
 
 .pet img{
-    background: pink;
-    width: 170px;
-    height: 170px;
+   width: 80%;
+   height: 50%;
+   object-fit: cover;
     
 }
 
