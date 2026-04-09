@@ -1,133 +1,159 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ajudar</title>
+    <title>Meu Pet | Como Ajudar</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Quicksand:wght@300..700&display=swap">
     <link rel="stylesheet" href="../css/ajudar.css">
 </head>
 <body>
     <header>
         <div class="logo">
+            <img src="../images/cat.gif" alt="Logo Meu Pet">
             <h1>Meu Pet</h1>
-            <img src="../images/cat.gif" alt="gatinho">
         </div>
         <nav>
-            <ul id>
+            <ul id="menu">
+                <li><a href="/index.html">Home</a></li>
                 <li><a href="/page/sobre.html">Sobre</a></li>
                 <li><a href="/page/contacto.html">Contacto</a></li>
                 <li><a href="/page/adocao.html">Adoção</a></li>
                 <li><a href="/page/ajudar.html">Ajudar</a></li>
             </ul>
-         </nav>
-          <audio controls loop >
+        </nav>
+        <audio controls loop>
             <source src="../music/cats.mp3" type="audio/mpeg">
-
-          </audio>
-
+        </audio>
     </header>
-    <section class="hero-ajudar">
-        <h3>Como Podes Ajudar?</h3>
-        <p>Cada pequena ajuda pode mudar a vida de um animal</p>
-    </section>
-    
-    <section class="formas-ajudar">
-        <div class="card">
-            <h4>Adotar</h4>
-            <p>Dá um lar cheio de amor.</p>
-        </div>
 
-        <div class="card">
-            <h4>Doar</h4>
-            <p>Ajuda com recursos.</p>
-        </div>
-
-        <div class="card">
-            <h4>Voluntariado</h4>
-            <p>Oferece tempo</p>
-        </div>
-        <div class="card">
-            <h4> Apadrinhar</h4>
-            <p>Apoia mensalmente.</p>
-        </div>
-
-    </section>
-    
-    <section class="animais">
-        <div class="pet">
-            <img src="../images/gato_bj.jpg" alt="Gato">
-        </div>
-        <div class="pet">
-          <img src="../images/gato_eat.jpg" alt="Gato e Cão">
-        </div>
-        <div class="pet">
-          <img src="../images/gato_cao1.jpg" alt="Gato e Cão">
-        </div>
-        <div class="pet">
-            <img src="../images/gato_din.jpg" alt="gato dindin">
-        </div>
-
-    </section>
-
-
-     <section class="hero-adocao">
-        <h2> Formulário para ajudar </h2>
-        <p>Preencha o formulário abaixo para iniciar.</p>
-    </section>
-
-    <div class="caixa-adocao">
-        <h3> Os teus dados </h3>
-        <form action="servidor.com" method="post">
-            <P class="titulo-secao">Dados Pessoais</P>
-            <div class="campo">
-                <label for="nome">Nome Completo</label>
-                <input type="text" id="nome" name="nome" placeholder="Ex: Frajola" required minlength="3" maxlength="100">
-            </div>
-
-            <div class="campo">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="Ex: frajola_7_vidas.com" required>
-            </div>
-            <div class="campo">
-                <label for="telefone">Telefone</label>
-                <input type="tel" id="telefone" name="telefone" placeholder="Ex: 912 345 678" required>
-            </div>
-            <hr class="separador">
-            <p class="titulo-secao">Morada</p>
-
-            <div class="campo">
-                <label for="rua">Rua e Número</label>
-                <input type="text" id="rua" name="rua" placeholder="Ex: Rua da Paz, 123" required>  
-            </div>
-            <div class="campo">
-                <label for="cidade">Cidade</label>
-                <select name="cidade" id="cidade" required>
-                    <option value="">Selecione uma cidade</option>
-                    <option value="Lisboa">Lisboa</option>
-                    <option value="Porto">Porto</option>
-                    <option value="Braga">Braga</option>
-                    <option value="Coimbra">Coimbra</option>
-                    <option value="Aveiro">Aveiro</option>
-                </select>
-   
+    <main>
+        <section class="hero-ajudar">
+            <h1>Como Podes Ajudar?</h1>
+            <p>Cada pequena ajuda pode mudar a vida de um animal 🐾</p>
+        </section>
         
-   <footer class="footer" id="contacto">
-       <div class="info">
-           <h2>Como chegar?</h2>
-           <p>Endereço: Ruado Pet, 123 - Porto</p>
-           <div class="mapa">
+        <section class="formas-ajudar">
+            <div class="card">
+               <img src="../images/gato_bj.jpg" alt="Gatinho a receber beijo">
+               <div class="card-info">
+                 <h4>Adotar</h4>
+                <p>Dá um lar cheio de amor e carinho.</p>
+               </div>           
+            </div>
 
-              <iframe src="https://www.google.com/maps?q=Rua+do+Pet+123+Porto&output=embed"
-                 allowfullscreen loading="lazy"
-                title="Localização Meu Pet">
-              </iframe>
-           </div>
-         
+            <div class="card">
+                <img src="../images/gato_eat.jpg" alt="Gato a comer">
+                <div>
+                    <h4>Doar</h4>
+                <p>Ajuda com ração e recursos essenciais.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="../images/gato_cao1.jpg" alt="Gato e Cão juntos">
+                <div>
+                     <h4>Voluntariado</h4>
+                <p>Oferece o teu tempo para passeios e mimos.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="../images/gato_din.jpg" alt="Gato com moedas">
+                <div>
+                    <h4>Apadrinhar</h4>
+                    <p>Apoia mensalmente um pet específico.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="hero-adocao">
+            <h2>Formulário de Apoio</h2>
+            <p>Escolhe a tua forma de ajudar e entraremos em contacto.</p>
+        </section>
+
+        <div class="caixa-adocao">
+            <h3>Os teus dados</h3>
+            <form action="#" method="post">
+                <p class="titulo-secao">Dados Pessoais</p>
+                <div class="campo">
+                    <label for="nome">Nome Completo</label>
+                    <input type="text" id="nome" name="nome" placeholder="Ex: Frajola" required>
+                </div>
+
+                <div class="campo">
+                    <label for="email">Email de Contacto</label>
+                    <input type="email" id="email" name="email" placeholder="Ex: frajola_07_vidas@email.com" required>
+                </div>
+
+                <div class="campo">
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" id="telefone" name="telefone" placeholder="Ex: 9xx xxx xxx" required>
+                </div>
+
+                <p class="titulo-secao">Como queres ajudar?</p> 
+                <div class="campo">
+                    <select name="tipo_ajuda" required>
+                        <option value="" disabled selected>Escolhe uma opção</option>
+                        <option value="adotar">Adotar</option>
+                        <option value="doar">Doar</option>
+                        <option value="voluntariado">Voluntariado</option>
+                        <option value="apadrinhar">Apadrinhar</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn-submeter">Enviar Mensagem 🐾</button>
+            </form> 
         </div>
-        <p class="footer-copy">© 2026 Meu Pet. Todos os direitos reservados. 🐾</p>
-   </footer>
-    
+    </main>
+   
+    <footer class="footer-complexo">
+    <div class="footer-container">
+        <div class="footer-coluna logo-info">
+            <div class="logo-footer">
+                <img src="../images/cat.gif" alt="Logo Meu Pet">
+                <h2>Meu Pet</h2>
+            </div>
+            <p>Associação Meu Pet<br>Adoção de Animais Domésticos</p>
+            <p class="nipc">NIPC: 123 456 789</p>
+        </div>
+
+        <div class="footer-coluna">
+            <h3>Adoção</h3>
+            <ul>
+                <li><a href="/page/adocao.html">Animais para adoção</a></li>
+                <li><a href="#">Divulgar animal</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-coluna">
+            <h3>Como ajudar</h3>
+            <ul>
+                <li><a href="#">Doações</a></li>
+                <li><a href="#">Voluntariado</a></li>
+                <li><a href="#">Apadrinhamento</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-coluna">
+            <h3>Saiba mais</h3>
+            <ul>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+            <div class="redes-sociais">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 - Meu Pet - Adoção de Animais | Desenvolvido por Você 🐾</p>
+    </div>
+</footer>
 </body>
 </html>
