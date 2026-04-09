@@ -30,6 +30,14 @@ header {
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
+audio {
+    width: 200px;
+    border-radius: 20px;
+    background-color: rgb(255, 235, 235);
+    border: 2px solid rgb(249, 107, 154, 0.4);
+    padding: 5px;
+}
+
 .logo {
     font-family: 'Fredoka', sans-serif;
     display: flex;
