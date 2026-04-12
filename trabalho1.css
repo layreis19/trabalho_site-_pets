@@ -25,7 +25,7 @@ header{
 }
 
 :hover{
-cursor: url('/images/cat_paw.png'), auto;
+cursor: url('images/cat_paw.png'), auto;
 }
 
 .logo{
@@ -70,6 +70,37 @@ nav a:hover{
 nav li { transition: transform 0.2s;}
 
 nav li:hover {transform: scale(1.05);} /* Aumenta o item em 10% */
+
+.dropdown {
+    position: relative;
+}
+.dropdown-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 120%;
+    left: 0;
+    background: white;
+    border-radius: 10px;
+    min-width: 200px;
+    box-shadow: 0 2px 8px rgba(249, 107, 154, 0.15);
+    overflow: hidden;
+}
+
+.dropdown-menu li a{
+    display: block;
+    padding: 10px;
+    color: var(--cor-principal);
+    text-decoration: none;
+}
+
+.dropdown-menu li a:hover{
+    color: var(--cor-principal);
+}
+.dropdown:hover .dropdown-menu{
+    display: flex;
+}
+
 
 audio {
     width: 200px;
@@ -269,6 +300,13 @@ audio {
     transform: scale(1.08);
      background-color: rgb(231, 205, 255, 0.8);
 }
+
+
+
+
+
+
+
 
 .footer{
     background-color: var(--cor-principal);

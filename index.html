@@ -18,13 +18,20 @@
             <ul >
                 <li><a href="index.html">Home</a></li>
                 <li><a href="sobre.html">Sobre</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="/page/adocao.html">Adoção</a></li>
-                <li><a href="/page/ajudar.html">Ajudar</a></li>
+                <li><a href="page/adocao.html">Adoção</a></li>
+                <li class="dropdown">
+                    <a href="/page/ajudar.html">Ajudar</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#doar">doar</a></li>
+                        <li><a href="#apadrinhar">Doações</a></li>
+                        <li><a href="#voluntariado">Voluntariado</a></li>
+                        <li><a href="#adotar">Adoção</a></li>
+                    </ul>
+                </li>
             </ul>
          </nav>
         <audio controls loop >
-            <source src="/music/cats.mp3" type="audio/mpeg">
+            <source src="music/cats.mp3" type="audio/mpeg">
         </audio>     
     </header>
 
@@ -34,7 +41,7 @@
 
     </section>
 
-    <div class="filtros">
+    <div class="filtro">
         <button onclick="filtrar('todos')" class="btn-filtro ativo">Todos</button>
         <button onclick="filtrar('cao')" class="btn-filtro">Cães</button>
         <button onclick="filtrar('gato')" class="btn-filtro">Gatos</button>
@@ -217,7 +224,9 @@
             <div class="pet" data-especie="cao" data-sexo="Fêmea" data-cor="Cinzento" data-tamanho="medio" data-zona="Porto">
                         <img src="images/Luchhh I am your fathhher!.jpg" alt="cachorro">
                         <h2>Vader</h2>
-                        <p>Veio de uma galáxia muito, muito distante e está farto de viagens. Tudo o que quer agora é um sofá macio, ração boa e alguém que não lhe faça perguntas sobre o passado.
+                        <p>Veio de uma galáxia muito, muito distante e está farto de viagens. Tudo o que quer agora é um sofá macio, ração boa e alguém que não lhe faça perguntas sobre o seu passado misterioso.</p>
+                        <button>Adote</button>
+                        
             </div>
 
             <div class="pet" data-especie="gato" data-sexo="Macho" data-cor="Branco" data-tamanho="pequeno" data-zona="Coimbra">
@@ -227,10 +236,16 @@
                         <button>Adote</button>
 
             </div>
-         
+
+
+        
+
 
         </div>
+        
     </div>
+
+
     
    <footer class="footer" id="contacto">
         <div class="info">

@@ -9,18 +9,17 @@
     <link rel="stylesheet" href="../css/ajudar.css">
 </head>
 <body>
-    <header>
+   <header>
         <div class="logo">
             <img src="../images/cat.gif" alt="Logo Meu Pet">
             <h1>Meu Pet</h1>
         </div>
         <nav>
             <ul id="menu">
-                <li><a href="/index.html">Home</a></li>
-                <li><a href="/page/sobre.html">Sobre</a></li>
-                <li><a href="/page/contacto.html">Contacto</a></li>
-                <li><a href="/page/adocao.html">Adoção</a></li>
-                <li><a href="/page/ajudar.html">Ajudar</a></li>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="adocao.html">Adoção</a></li>
+                <li><a href="ajudar.html">Ajudar</a></li>
             </ul>
         </nav>
         <audio controls loop>
@@ -36,34 +35,49 @@
         
         <section class="formas-ajudar">
             <div class="card">
-               <img src="../images/gato_bj.jpg" alt="Gatinho a receber beijo">
+               <img src="../images/gato_bj.jpg" alt="Adotar">
                <div class="card-info">
-                 <h4>Adotar</h4>
-                <p>Dá um lar cheio de amor e carinho.</p>
-               </div>           
+                    <h4>Adotar</h4>
+                    <p>Dá um lar cheio de amor e carinho para um novo amigo.</p>
+                    <a href="adocao.html" class="btn-card">Saber Mais</a>
+               </div>            
             </div>
 
             <div class="card">
-                <img src="../images/gato_eat.jpg" alt="Gato a comer">
-                <div>
+                <img src="../images/gato_eat.jpg" alt="Doar">
+                <div class="card-info">
                     <h4>Doar</h4>
-                <p>Ajuda com ração e recursos essenciais.</p>
+                    <p>Ajuda com ração, mantas e recursos essenciais de saúde.</p>
+                    <button class="btn-card">Doar Agora</button>
                 </div>
             </div>
 
             <div class="card">
-                <img src="../images/gato_cao1.jpg" alt="Gato e Cão juntos">
-                <div>
+                <img src="../images/gato_cao1.jpg" alt="Voluntariado">
+                <div class="card-info">
                      <h4>Voluntariado</h4>
-                <p>Oferece o teu tempo para passeios e mimos.</p>
+                    <p>Oferece o teu tempo para passeios, banhos e mimos.</p>
+                    <button class="btn-card">Participar</button>
                 </div>
             </div>
 
             <div class="card">
-                <img src="../images/gato_din.jpg" alt="Gato com moedas">
-                <div>
+                <img src="../images/gato_din.jpg" alt="Apadrinhar">
+                <div class="card-info">
                     <h4>Apadrinhar</h4>
-                    <p>Apoia mensalmente um pet específico.</p>
+                    <p>Apoia mensalmente as despesas de um pet específico.</p>
+                    <button class="btn-card">Apadrinhar</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="depoimento-pets">
+            <div class="depoimento-content">
+                <img src="../images/Gato_5.jpg" alt="Pet Feliz" class="img-depoimento">
+                <div class="texto-depoimento">
+                    <h3>"O Simão mudou a minha vida!"</h3>
+                    <p>Graças aos voluntários e doadores, o Simão foi recuperado e hoje vive feliz connosco. A tua ajuda faz a diferença!</p>
+                    <span>- Maria Silva, adotante feliz</span>
                 </div>
             </div>
         </section>
@@ -77,19 +91,21 @@
             <h3>Os teus dados</h3>
             <form action="#" method="post">
                 <p class="titulo-secao">Dados Pessoais</p>
-                <div class="campo">
-                    <label for="nome">Nome Completo</label>
-                    <input type="text" id="nome" name="nome" placeholder="Ex: Frajola" required>
-                </div>
+                <div class="form-grid">
+                    <div class="campo">
+                        <label for="nome">Nome Completo</label>
+                        <input type="text" id="nome" name="nome" placeholder="Ex: Frajola" required>
+                    </div>
 
-                <div class="campo">
-                    <label for="email">Email de Contacto</label>
-                    <input type="email" id="email" name="email" placeholder="Ex: frajola_07_vidas@email.com" required>
+                    <div class="campo">
+                        <label for="email">Email de Contacto</label>
+                        <input type="email" id="email" name="email" placeholder="frajola@email.com" required>
+                    </div>
                 </div>
 
                 <div class="campo">
                     <label for="telefone">Telefone</label>
-                    <input type="tel" id="telefone" name="telefone" placeholder="Ex: 9xx xxx xxx" required>
+                    <input type="tel" id="telefone" name="telefone" placeholder="9xx xxx xxx" required>
                 </div>
 
                 <p class="titulo-secao">Como queres ajudar?</p> 
@@ -104,29 +120,27 @@
                 </div>
 
                 <button type="submit" class="btn-submeter">Enviar Mensagem 🐾</button>
-            </form> 
+            </form>
         </div>
     </main>
-   
-    <footer class="footer-complexo">
-    <div class="footer-container">
-      
-   <footer class="footer" id="contacto">
-       <div class="info">
-           <h2>Como chegar?</h2>
-           <p>Endereço: Ruado Pet, 123 - Porto</p>
-        <div class="mapa">
-              <iframe src="https://www.google.com/maps?q=Rua+do+Pet+123+Porto&output=embed"
-                 allowfullscreen loading="lazy"
-                title="Localização Meu Pet">
-              </iframe>
-        </div>
-        </div>
-    </div>
 
-    <div class="footer-bottom">
-        <p>© 2026 - Meu Pet - Adoção de Animais | Desenvolvido por Você 🐾</p>
-    </div>
-</footer>
+    <footer class="footer" id="contacto">
+        <div class="footer-container">
+            <div class="info">
+                <h2>📍 Localização</h2>
+                <p>Rua do Pet, 123 - Porto</p>
+                <div class="mapa">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3004.5!2d-8.6!3d41.1!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDHCsDA2JzAwLjAiTiA4wrAzNicwMC4wIlc!5e0!3m2!1spt!2spt!4v1620000000000" 
+                        allowfullscreen loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 - Meu Pet - Adoção de Animais 🐾</p>
+        </div>
+    </footer>
+    <!-- ↑ só UM footer, bem fechado -->
+
 </body>
 </html>
