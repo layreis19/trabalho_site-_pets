@@ -470,7 +470,6 @@ audio {width: 200px;
     }
 }
 
-/* ---------- Mobile ---------- */
 @media (max-width: 600px) {
     header {
         flex-direction: column;
@@ -577,7 +576,7 @@ audio {width: 200px;
     }
 }
 
-/* ---------- Telemóveis pequenos ---------- */
+
 @media (max-width: 380px) {
     .logo h1 {
         font-size: 1.1rem;

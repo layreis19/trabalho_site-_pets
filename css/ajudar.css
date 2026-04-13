@@ -120,7 +120,7 @@ audio {
     border-radius: 20px;
     overflow: hidden;
     display: flex;
-    flex-direction: column; /* Imagem em cima, texto embaixo */
+    flex-direction: column; 
     transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     box-shadow: 0 5px 15px rgba(0,0,0,0.05);
 }
@@ -179,7 +179,6 @@ audio {
 .texto-depoimento h3 { font-family: 'Fredoka'; color: var(--cor-principal); }
 .texto-depoimento span { font-weight: bold; color: var(--cor-accent); display: block; margin-top: 10px; }
 
-/* Formulário */
 .caixa-adocao {
     max-width: 700px;
     margin: 0 auto 4rem;
@@ -195,7 +194,7 @@ audio {
     gap: 15px;
 }
 
-/* Responsividade do Formulário */
+
 @media (max-width: 600px) {
     .form-grid { grid-template-columns: 1fr; }
 }
@@ -214,8 +213,15 @@ input:focus { border-color: var(--cor-accent); outline: none; box-shadow: 0 0 5p
 
 .btn-submeter:hover { background: #4a3212; transform: scale(1.02); }
 
-/* Footer */
-.footer { background: var(--cor-principal); color: white; padding: 40px 5% 20px; text-align: center; }
+
+.footer {
+    font-family: 'Fredoka', sans-serif;
+     background: var(--cor-principal);
+     color: white;
+     padding: 40px 5% 20px;
+     text-align: center;
+
+     }
 .mapa iframe { width: 100%; height: 250px; border-radius: 20px; border: none; margin-top: 15px; }
 .footer-bottom { margin-top: 30px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px; }
 
@@ -266,7 +272,7 @@ input:focus { border-color: var(--cor-accent); outline: none; box-shadow: 0 0 5p
     }
 }
 
-/* ---------- Mobile ---------- */
+
 @media (max-width: 600px) {
     header {
         flex-direction: column;
@@ -364,7 +370,7 @@ input:focus { border-color: var(--cor-accent); outline: none; box-shadow: 0 0 5p
     }
 }
 
-/* ---------- Telemóveis pequenos ---------- */
+
 @media (max-width: 380px) {
     .logo h1 {
         font-size: 1.1rem;
