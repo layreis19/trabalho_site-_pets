@@ -424,5 +424,184 @@ audio {width: 200px;
     color: #666;
     line-height: 1.5;
 }
+
+
+@media (max-width: 900px) {
+    header {
+        flex-wrap: wrap;
+        padding: 0.8rem 1.2rem;
+        gap: 8px;
+    }
+
+    .logo h1 {
+        font-size: 1.6rem;
+    }
+
+    .logo img {
+        width: 55px;
+        height: 55px;
+    }
+
+    nav ul {
+        gap: 16px;
+        font-size: 1rem;
+    }
+
+    audio {
+        width: 160px;
+    }
+
+    .missao {
+        gap: 24px;
+        padding: 3rem 3%;
+    }
+
+    .grid-valores {
+        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    }
+
+    .contactos-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .grid-noticias {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+}
+
+/* ---------- Mobile ---------- */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0.8rem 1rem;
+    }
+
+    .logo h1 {
+        font-size: 1.3rem;
+    }
+
+    .logo img {
+        width: 45px;
+        height: 45px;
+    }
+
+    nav ul {
+        gap: 8px;
+        font-size: 0.9rem;
+        flex-wrap: wrap;
+    }
+
+    nav a {
+        padding: 4px 8px;
+    }
+
+    audio {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .hero-sobre {
+        padding: 2.5rem 1rem;
+    }
+
+    .hero-sobre h2 {
+        font-size: 1.8rem;
+    }
+
+    .hero-sobre p {
+        font-size: 1rem;
+    }
+
+    .missao {
+        flex-direction: column;
+        padding: 2rem 1rem;
+        gap: 20px;
+    }
+
+    .missao-imagem img {
+        max-width: 100%;
+        border-radius: 14px;
+    }
+
+    .impacto {
+        padding: 2.5rem 1rem;
+    }
+
+    .grid-numeros {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+
+    .numero-card {
+        padding: 1rem;
+    }
+
+    .valores {
+        padding: 2.5rem 1rem;
+    }
+
+    .grid-valores {
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+    }
+
+    .card-valor {
+        padding: 1.2rem 1rem;
+    }
+
+    .contactos {
+        padding: 2.5rem 1rem;
+    }
+
+    .contactos-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .mapa iframe {
+        height: 220px;
+    }
+
+    .noticias {
+        padding: 2.5rem 1rem;
+    }
+
+    .grid-noticias {
+        grid-template-columns: 1fr;
+    }
+
+    .footer {
+        padding: 1.2rem 1rem;
+        font-size: 0.85rem;
+    }
+}
+
+/* ---------- Telemóveis pequenos ---------- */
+@media (max-width: 380px) {
+    .logo h1 {
+        font-size: 1.1rem;
+    }
+
+    .hero-sobre h2 {
+        font-size: 1.5rem;
+    }
+
+    nav ul {
+        font-size: 0.8rem;
+    }
+
+    .grid-numeros {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-valores {
+        grid-template-columns: 1fr;
+    }
+
+    .numero-card {
+        padding: 0.8rem;
+    }
+}
  
  

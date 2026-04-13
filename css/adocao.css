@@ -252,3 +252,152 @@ audio {
             .logo h1 { font-size: 1.4rem; }
             header { flex-wrap: wrap; }
         }
+
+
+
+@media (max-width: 900px) {
+    header {
+        flex-wrap: wrap;
+        padding: 0.8rem 1.2rem;
+        gap: 8px;
+    }
+
+    .logo h1 {
+        font-size: 1.6rem;
+    }
+
+    .logo img {
+        width: 55px;
+        height: 55px;
+    }
+
+    nav ul {
+        gap: 16px;
+        font-size: 1rem;
+    }
+
+    audio {
+        width: 160px;
+    }
+
+    .hero-adocao {
+        padding: 2rem 1.5rem;
+    }
+
+    .hero-adocao h2 {
+        font-size: 2rem;
+    }
+
+    .caixa-adocao {
+        max-width: 90%;
+        padding: 2rem 1.5rem;
+    }
+}
+
+/* ---------- Mobile ---------- */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0.8rem 1rem;
+    }
+
+    .logo h1 {
+        font-size: 1.3rem;
+    }
+
+    .logo img {
+        width: 45px;
+        height: 45px;
+    }
+
+    nav ul {
+        gap: 8px;
+        font-size: 0.9rem;
+        flex-wrap: wrap;
+    }
+
+    nav a {
+        padding: 4px 8px;
+    }
+
+    audio {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .hero-adocao {
+        padding: 1.5rem 1rem;
+    }
+
+    .hero-adocao h2 {
+        font-size: 1.6rem;
+    }
+
+    .hero-adocao p {
+        font-size: 1rem;
+    }
+
+    .caixa-adocao {
+        max-width: 95%;
+        margin: 1.5rem auto;
+        padding: 1.5rem 1rem;
+        border-radius: 14px;
+    }
+
+    .caixa-adocao h3 {
+        font-size: 1.4rem;
+    }
+
+    .campo label {
+        font-size: 0.9rem;
+    }
+
+    .campo input,
+    .campo select,
+    .campo textarea {
+        font-size: 0.9rem;
+        padding: 8px 10px;
+    }
+
+    .grupo-radio {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .btn-submeter {
+        font-size: 1.1rem;
+        padding: 12px;
+    }
+
+    .footer {
+        padding: 1.5rem 1rem;
+    }
+
+    .footer h2 {
+        font-size: 1.2rem;
+    }
+
+    .mapa iframe {
+        height: 200px;
+    }
+}
+
+/* ---------- Telemóveis pequenos ---------- */
+@media (max-width: 380px) {
+    .logo h1 {
+        font-size: 1.1rem;
+    }
+
+    .hero-adocao h2 {
+        font-size: 1.3rem;
+    }
+
+    .caixa-adocao {
+        padding: 1rem 0.8rem;
+    }
+
+    nav ul {
+        font-size: 0.8rem;
+    }
+}
