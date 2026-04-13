@@ -28,7 +28,7 @@ header{
 }
 
 :hover{
-cursor: url('images/cat_paw.png'), auto;
+cursor: url('/images/cat_paw.png'), auto;
 }
 
 .logo{
@@ -153,6 +153,8 @@ audio {
         .campo textarea {
             height: 100px;
             height: 100%;
+            min-width: 150px;
+            
             
         }
  
@@ -294,7 +296,7 @@ audio {
     }
 }
 
-/* ---------- Mobile ---------- */
+
 @media (max-width: 600px) {
     header {
         flex-direction: column;
@@ -383,7 +385,7 @@ audio {
     }
 }
 
-/* ---------- Telemóveis pequenos ---------- */
+
 @media (max-width: 380px) {
     .logo h1 {
         font-size: 1.1rem;
