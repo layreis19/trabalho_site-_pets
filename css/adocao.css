@@ -6,8 +6,11 @@
 }
 
 body{
-    font-family: 'Quicksand', sans-serif;
-    background-color: #fff5f5;
+   font-family: 'Quicksand', sans-serif;
+    background-color: var(--cor-fundo);
+    color: #333;
+    line-height: 1.6;
+
 }
 
 header{
@@ -25,7 +28,7 @@ header{
 }
 
 :hover{
-cursor: url('/images/cat_paw.png'), auto;
+cursor: url('images/cat_paw.png'), auto;
 }
 
 .logo{

@@ -6,8 +6,7 @@
     --white: #ffffff;
 }
 
-/* Reset e Base */
-* { box-sizing: border-box; margin: 0; padding: 0; }
+
 body {
     font-family: 'Quicksand', sans-serif;
     background-color: var(--cor-fundo);
@@ -15,24 +14,75 @@ body {
     line-height: 1.6;
 }
 
-/* Header */
+
 header {
-    background-color: var(--cor-principal);
+   background-color: var(--cor-principal);
     color: white;
-    padding: 1rem 5%;
+    padding: 1rem 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    gap: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
-.logo { font-family: 'Fredoka', sans-serif; display: flex; align-items: center; gap: 12px; }
-.logo img { width: 60px; height: 60px; border-radius: 50%; border: 3px solid var(--cor-destaque); object-fit: cover; }
+:hover{
+cursor: url('/images/cat_paw.png'), auto;
+}
 
-nav ul { list-style: none; display: flex; gap: 15px; }
-nav a { text-decoration: none; color: white; font-weight: 700; padding: 8px 15px; border-radius: 20px; transition: 0.3s; }
-nav a:hover { color: var(--cor-destaque); background: rgba(255,255,255,0.1); }
+.logo{
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 600;
+    display: flex;
+    align-items: center;  
+    gap: 12px;  
+}
+.logo h1{
+    font-size: 2rem;
+}
+.logo img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    border: 3px solid var(--cor-destaque);
+    object-fit: cover; 
+}
+ 
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    font-size: 1.1rem;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 6px 12px;
+    border-radius: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover{
+    color: rgb(244, 209, 121);
+    background-color: rgba(244, 209, 121, 0.2);
+}
+
+nav li { transition: transform 0.2s;}
+
+nav li:hover {transform: scale(1.05);} /* Aumenta o item em 10% */
+
+
+audio {
+    width: 200px;
+    border-radius: 20px;
+    background-color: rgb(255, 235, 235);
+    border: 2px solid rgb(249, 107, 154, 0.4);
+    padding: 5px;
+}
 
 
 .formas-ajudar {
